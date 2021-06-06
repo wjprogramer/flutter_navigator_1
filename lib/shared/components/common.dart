@@ -14,7 +14,11 @@ class MyListView extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       controller: controller,
-      children: children,
+      children: [
+        SizedBox(height: 8,),
+        ...children,
+        SizedBox(height: 8,),
+      ],
     );
   }
 }
