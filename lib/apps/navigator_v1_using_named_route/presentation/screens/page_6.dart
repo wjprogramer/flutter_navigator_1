@@ -54,6 +54,16 @@ class _Page6State extends State<Page6> with MyBaseState {
             safeSetState();
           },
         ),
+        MyListTile(
+          methodName: 'PopUntil',
+          pageName: '/home',
+          onTap: () async {
+            Navigator.of(context).popUntil(
+                  ModalRoute.withName('home')
+            );
+            safeSetState();
+          },
+        ),
       ],
     );
   }
